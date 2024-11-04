@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Connekt | Lets Ride - Vechile Models</title>
+    <link rel="stylesheet" href="CSS/vechile-models.css">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div id="root">
+
+        <div class="header">
+            <div class="container">
+                <img loading="lazy" src="assets/Logo.png" alt="Logo">
+                <div class="items">
+                    <a href="./">Home</a>
+                    <a href='/about.html'>About</a>
+                    <a href='./vechile-models.html'>Vehicle Models</a>
+                    <a href='./testimonials.html'>Testimonials</a>
+                    <a href='./contact.html'>Contact</a>
+                    <button type="button">Log In</button>
+                </div>
+                <div class="menu-icon" onclick="toggle()">
+                    <img loading="lazy" alt="menu"
+                        src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2833, 37, 41, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e">
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-box">
+            <button type="button">Log In</button>
+            <a href="./">Home</a>
+            <a href='/about.html'>About</a>
+            <a href='./vechile-models.html'>Vechile Models</a>
+            <a href='./testimonials.html'>Testimonials</a>
+            <a href='./contact.html'>Contact</a>
+        </div>
+
+        <div class="section-1">
+            <div class="banner"></div>
+            <div class="section-3">
+                <div class="vehical-models">
+                    <h2>Our Top Rentals</h2>
+                    <p>Choose from a variety of our amazing vehicles to rent for your next business trip or adventure
+                    </p>
+                </div>
+
+                <div class="Rental-container">
+
+                    <div class="car-list">
+                        <button type="button"
+                            onclick="carDetails('./assets/tesla.png', '$52/day', 'Tesla', 'Model 3', '2022', 'Automatic', '4')"
+                            data-car="tesla">Tesla Model 3</button>
+                        <button type="button"
+                            onclick="carDetails('./assets/honda.png', '$38/day', 'Honda', 'Accord', '2022', 'Automatic', '4')"
+                            data-car="honda">Honda Accord</button>
+                        <button type="button"
+                            onclick="carDetails('./assets/jeep.png', '$45/day', 'Jeep', 'Wrangler', '2021', 'Automatic','2')"
+                            data-car="jeep">Jeep Wrangler</button>
+                        <button type="button"
+                            onclick="carDetails('./assets/ford.png', '$48/day', 'Ford', 'F-350', '2021', 'Automatic', '2')"
+                            data-car="ford">Ford F-350</button>
+                        <button type="button"
+                            onclick="carDetails('./assets/mini.png', '$42/day', 'Mini', 'Cooper S', '2022', 'Manual', '2')"
+                            data-car="mini">Mini Cooper S</button>
+                        <button type="button"
+                            onclick="carDetails('./assets/nissan.png', '$40/day', 'Nissan', 'Sentra', '2020', 'Automatic', '4')"
+                            data-car="nissan">Nissan Sentra</button>
+                        <button type="button"
+                            onclick="carDetails('./assets/volkswagon.png', '$49/day', 'Volkswagen', 'Golf MK8', '2022', 'Automatic', '4')"
+                            data-car="volkswagen">Volkswagen Golf MK8</button>
+                        <button type="button"
+                            onclick="carDetails('./assets/audi.png', '$50/day', 'Audi', 'E-Tron', '2023', 'Automatic', '4')"
+                            data-car="audi">Audi E-Tron</button>
+                    </div>
+
+                    <div class="car-images" id="cars-img">
+                        <img loading="lazy" src="./assets/tesla.png" alt="Cars">
+                    </div>
+
+                    <div class="car-details">
+                        <div class="price-day">
+                            <h1 id="car-rent">$52/day</h1>
+                        </div>
+
+                        <div class="details-row">
+                            <p class="text-start">Make</p>
+                            <p class="text-end" id="car-make">Tesla</p>
+
+                            <p class="text-start">Model</p>
+                            <p class="text-end" id="car-model">Model 3</p>
+
+                            <p class="text-start">Year</p>
+                            <p class="text-end" id="car-year">2022</p>
+
+                            <p class="text-start">Transmission</p>
+                            <p class="text-end" id="car-transmission">Automatic</p>
+
+                            <p class="text-start">Doors</p>
+                            <p class="text-end" id="car-doors">4</p>
+                        </div>
+
+                        <div class="reserve-btn">
+                            <a href="#book-ride">
+                                <button id="reserve-button" type="button">Reserve Now</button>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-2">
+                <h2>Save big with Car Connekt</h2>
+                <p>Cheapest rates. Local Suppliers. <span>24/7</span> support.</p>
+            </div>
+        </div>
+
+        <footer id="more-info">
+            <div class="section-9">
+                <div class="footer-row">
+
+                    <div class="footer-child">
+                        <div class="footer-logo">
+                            <img loading="lazy" src="assets/logo.png" alt="Car Connekt Logo">
+                        </div>
+                        <div class="tag-line">
+                            <p>The cheapest, easiest car rental service</p>
+                        </div>
+
+                        <div class="contact-info">
+                            <a rel="noopener" href="https://wa.me/+14167780018" target="_blank">
+                                <p><i class="special-text fa-solid fa-phone"></i>
+                                    +1 (416) 778-0018
+                                </p>
+                            </a>
+                            <a rel="noopener" href="mailto:info@carconnekt.ca" target="_blank">
+                                <p><i class="special-text fa-solid fa-envelope"></i>
+                                    info@carconnekt.ca
+                                </p>
+                            </a>
+                            <h6>designed by FARZAIN GHOURI</h6>
+                        </div>
+                    </div>
+
+                    <div class="footer-child">
+                        <h3><i class="fa-solid fa-building"></i>
+                            Branches
+                        </h3>
+
+                        <div class="branches">
+                            <p>Toronto</p>
+                            <p>Thunder Bay</p>
+                            <p>Calgary</p>
+                            <p>Victoria</p>
+                        </div>
+
+                        <div class="careers">
+                            <h3><i class="fa-solid fa-suitcase"></i>
+                                Careers
+                            </h3>
+                        </div>
+                    </div>
+
+                    <div class="footer-child">
+                        <h3><i class="fa-solid fa-clock"></i>
+                            Working Hours
+                        </h3>
+                        <div class="working-text">
+                            <p class="text-start">Mon - Fri:</p>
+                            <p class="text-end">8am - 8pm</p>
+                            <p class="text-start">Sat:</p>
+                            <p class="text-end">9am - 5pm</p>
+                            <p class="text-start">Sun:</p>
+                            <p class="text-end">Closed</p>
+                        </div>
+                    </div>
+
+                    <div class="footer-child">
+                        <div class="subscribe">
+                            <h3><i class="fa-solid fa-envelope"></i>
+                                subscribe
+                            </h3>
+                            <p>weekly newsletter with promotions. opt out at any time.</p>
+
+                            <div class="subscribe-row">
+                                <input type="email" placeholder="Enter your email">
+                                <button type="submit" class="subscribe-btn">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="section-10">
+                <div class="footer_copy">
+                    <p>Copyright&#169; Car Connekt 2024. All right reserved</p>
+                </div>
+
+                <div class="last-line">
+                    <p>
+                        <a href="https://github.com/Farzainghouri" target="_blank" rel="noopener">
+                            <i class="fa-brands fa-github"></i> Designed & Developed By FARZAIN GHOURI
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+    <script src="https://kit.fontawesome.com/a7a0423dc4.js" crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+
+</body>
+
+</html>
+
+<!-- end  -->

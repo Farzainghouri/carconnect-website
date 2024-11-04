@@ -1,0 +1,1760 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lexend", sans-serif;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+}
+
+#root {
+    min-height: 100%;
+}
+
+button {
+    outline: none !important;
+    border: none !important;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+.header {
+    width: 100%;
+    height: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .container {
+    width: 95%;
+    max-width: 1115px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .container img {
+    width: 160px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.header .container .items {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header .container .items a {
+    font-weight: 600;
+    margin: 0 3px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.header .container .items a:hover {
+    color: #569dd0;
+}
+
+.header .container .items a:nth-child(5) {
+    margin-right: 13.2px;
+}
+
+.header .container .items button {
+    width: max-content;
+    padding: 10px 23.5px;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    background-color: #569dd0;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.header .container .items button:hover {
+    background-color: #2b8eac;
+}
+
+.header .container .menu-icon {
+    width: 55px;
+    height: max-content;
+    border: 1px solid #d9d9d9;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding: 3.5px 0px;
+    border-radius: 6px;
+}
+
+.menu-box {
+    width: 100%;
+    height: max-content;
+    position: absolute;
+    z-index: -1;
+}
+
+.menu-box button,
+.menu-box a {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 0 15px;
+    cursor: pointer;
+}
+
+.menu-box a:active {
+    color: #569dd0;
+}
+
+.menu-box button {
+    background-color: #569dd0;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+.menu-box button:hover {
+    background-color: #2b8eac;
+}
+
+/* .section-1  */
+
+.section-1 {
+    height: 96vh;
+    width: 100%;
+    display: flex;
+    background-color: #fff;
+    transition: all 0.4s ease-in-out;
+}
+
+.car-image {
+    flex: 1;
+}
+
+.car-image img {
+    position: absolute;
+    right: 80px;
+    width: 52rem;
+    bottom: -115px;
+}
+
+.main-left {
+    width: 65%;
+    height: 100%;
+    padding-left: 117px;
+    padding-top: 30px;
+}
+
+.main-left h1 {
+    font-family: "Lexend";
+    font-weight: 500;
+    line-height: 1.2;
+    color: black;
+    font-size: 4.225rem;
+}
+
+span {
+    color: #569DD0;
+}
+
+.main-left p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    width: 34%;
+    margin-top: 10px;
+    margin-left: 47px;
+    margin-bottom: 1rem;
+}
+
+.main-left button {
+    background-color: #569dd0;
+    color: #fff;
+    padding: 10px 23.5px;
+    border: none;
+    border-radius: 4px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 47px;
+}
+
+.button:hover {
+    background-color: #196cc5;
+}
+
+.main-right {
+    background-color: #b1d0e6;
+    width: 35%;
+    height: 96%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.main-right p {
+    padding-right: .5rem;
+    padding-top: 10px;
+    font-weight: 800;
+}
+
+/* 2nd  */
+
+.section-2 {
+    background-color: #b1d0e6;
+    box-shadow: 8px 8px 16px #ddd;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+    padding: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 50px;
+    height: 100%;
+}
+
+.booking-row {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: calc(1.3rem + .6vw)
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    width: 32.5%
+}
+
+label {
+    font-weight: 400;
+    width: 200px;
+    text-align: left;
+    margin-right: 10px;
+    padding-bottom: 10px;
+}
+
+input[type="date"],
+select {
+    width: 100%;
+    display: block;
+    padding: .375rem 2.25rem .375rem .75rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.form-group button {
+    background-color: #1a7abe;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+    width: 100%;
+    height: 6vh;
+    margin-top: 2rem;
+}
+
+.form-group button:hover {
+    background-color: #4695ca;
+}
+
+option {
+    font-weight: normal;
+    display: block;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+    white-space: nowrap;
+}
+
+/* 3rd  */
+.section-3 {
+    height: 100%;
+    width: 100%;
+}
+
+.vehical-models {
+    text-align: center;
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+}
+
+.vehical-models h2 {
+    font-weight: 700;
+    font-size: calc(1.425rem + 2.1vw);
+}
+
+.vehical-models p {
+    color: rgba(33, 37, 41, 0.75);
+    margin-bottom: 3rem;
+    margin-top: 0;
+}
+
+.Rental-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 100px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.car-list {
+    width: 22.5%;
+}
+
+.car-list button {
+    display: block;
+    width: 100%;
+    border: 2px solid #569dd0;
+    border-radius: 2px;
+    background-color: #569dd0;
+    color: rgba(248, 249, 250);
+    margin: 6px;
+    padding: 10px 15px;
+    transition-duration: .2s;
+    cursor: pointer;
+}
+
+.car-list button:hover {
+    background-color: #196cc5;
+}
+
+.car-images {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: max-content;
+    height: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.car-images img {
+    width: 450px;
+    object-fit: cover;
+}
+
+.car-details {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 22%;
+}
+
+.price-day {
+    padding-bottom: .5rem;
+    padding-top: .5rem;
+}
+
+.price-day h1 {
+    font-family: Lexend;
+    font-weight: 600;
+    overflow-x: visible;
+    font-size: calc(1.375rem + 1.5vw);
+    text-align: center;
+    margin-bottom: .5rem;
+    line-height: 1.2;
+    margin-top: 0;
+}
+
+.details-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-top: 0;
+}
+
+.text-start {
+    width: 50%;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.text-end {
+    width: 50%;
+    text-align: right;
+    margin-bottom: 1rem;
+}
+
+.reserve-btn a {
+    text-decoration: none;
+}
+
+.reserve-btn {
+    width: 100%;
+}
+
+#reserve-button {
+    display: block;
+    width: 100%;
+    border: 2px solid #569dd0;
+    border-radius: 2px;
+    background-color: #569dd0;
+    color: rgba(248, 249, 250);
+    margin-top: 1.5rem;
+    padding: .5rem;
+    font-size: larger;
+    transition-duration: .2s;
+    cursor: pointer;
+}
+
+#reserve-button:hover {
+    background-color: #196cc5;
+}
+
+/* 4th  */
+
+.banner-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(33, 37, 41);
+    margin-bottom: 3rem;
+    width: 100%;
+    height: 200px;
+}
+
+.banner-text h2 {
+    font-family: Lexend;
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: rgba(248, 249, 250);
+}
+
+.banner-text p {
+    margin-bottom: 20px;
+    line-height: 1.2;
+    color: rgba(248, 249, 250);
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.banner-text span {
+    color: #008CBA;
+    text-decoration: none;
+}
+
+/* 5th  */
+
+.section-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.section-4 h5 {
+    font-family: Lexend;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 1.25rem;
+    text-align: center;
+    color: #212529;
+}
+
+.section-4 h3 {
+    font-family: Lexend;
+    font-weight: 700;
+    font-size: calc(1.425rem + 2.1vw);
+    text-align: center;
+    color: #212529;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: .5rem;
+}
+
+.feature-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1000px;
+    padding-bottom: 3rem;
+    gap: 10px;
+}
+
+.feature {
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    margin: 0 10px;
+    max-width: 100%;
+}
+
+.feature img {
+    height: 10vh;
+    width: auto;
+    margin-top: 1.5rem;
+    overflow-x: hidden;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.feature h4 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #212529;
+    font-size: calc(1.275rem + .3vw);
+    text-align: center;
+}
+
+.feature p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #212529;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.banner-img {
+    margin-bottom: 3rem;
+    width: 100%;
+}
+
+.banner-img img {
+    overflow-x: hidden;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+/* 6th  */
+
+.section-5 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.left-col {
+    width: 45%;
+    padding-right: 50px;
+    text-align: left;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    padding-top: 0;
+}
+
+.left-col h3 {
+    font-size: calc(1.3rem + .6vw);
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #212529;
+}
+
+.left-col h1 {
+    color: #212529;
+    margin-bottom: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: calc(1.425rem + 2.1vw);
+}
+
+.left-col p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #212529;
+    line-height: 1.5;
+}
+
+.Find-btn {
+    display: inline-block;
+    padding: 10px 14px;
+    background-color: #569dd0;
+    color: #fff;
+    border: 2px solid #569dd0;
+    border-radius: 2px;
+    transition-duration: 0.2s;
+    font-size: 16px;
+    font-family: Lexend;
+    font-weight: 400;
+}
+
+.Find-btn:hover {
+    background-color: #2980b9;
+}
+
+.right-col {
+    width: 45%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    max-width: 100%;
+}
+
+.feature-2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.feature-2-img {
+    flex: 0 0 auto;
+    width: 25%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.feature-2-img img {
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+.feature-2-text {
+    flex: 1;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.feature-2-text h5 {
+    color: #212529;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: bolder;
+    line-height: 1.2;
+    font-size: 1.25rem;
+}
+
+.feature-2-text p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+/* 7  */
+
+.section-6 {
+    background: linear-gradient(.5turn, #f4f4f4, #fff);
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    width: 100%;
+    height: 100%;
+}
+
+.row-text {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+.row-text h1 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-size: calc(1.425rem + 2.1vw);
+    font-weight: 700;
+    line-height: 1.2;
+    font-family: Lexend;
+    color: #212529;
+    text-align: center;
+}
+
+.row-text h6 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 17px;
+    width: 90%;
+    text-align: center;
+}
+
+.row-text p {
+    width: 50%;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: rgba(33, 37, 41, 0.75);
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+.feedback-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.testimonial {
+    background-color: #fff;
+    box-shadow: 3px 3px 14px #a5a5a5;
+    padding: 1.5rem;
+    border-radius: 0.375rem;
+    margin: .5rem;
+    max-width: 100%;
+    width: 45%;
+    position: relative;
+}
+
+.quote {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #212529;
+    width: 100%;
+}
+
+.client-box {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.client-box-text {
+    flex: 0 0 auto;
+    width: 41.66%;
+    max-width: 100%;
+}
+
+.author {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: bolder;
+    line-height: 1.5;
+    color: #212529;
+}
+
+.location {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+
+}
+
+.quote-icon {
+    flex: 0 0 auto;
+    width: 50%;
+    text-align: end;
+}
+
+.quote-icon img {
+    vertical-align: middle;
+}
+
+/* 8th  */
+
+.section-7 {
+    max-width: 800px;
+    background-color: #fff;
+    padding: 20px;
+    margin: 1.5rem auto 3rem;
+    width: 100%;
+    height: 100%;
+}
+
+.section-7 h4,
+.section-7 h3 {
+    font-family: "Lexend", sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+.section-7 h4 {
+    font-size: calc(1.275rem + .3vw);
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #212529;
+}
+
+.section-7 h3 {
+    font-weight: 700;
+    font-size: calc(1.425rem + 2.1vw);
+    list-style: 1.2;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    color: #212529;
+}
+
+.faq-container {
+    border: 1px solid #ccc;
+}
+
+.faq-item {
+    border: 1px solid #ccc;
+}
+
+.faq-item input {
+    display: none;
+}
+
+.faq-item label {
+    display: block;
+    padding: 15px 20px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-weight: 500;
+    background-color: #e0e7ff;
+    margin: 0;
+    font-family: "Lexend", sans-serif;
+}
+
+.faq-item label:hover {
+    background-color: #e0e7ff;
+}
+
+.faq-item input:checked+label {
+    background-color: #e7ebf5;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    font-family: "Lexend", sans-serif;
+}
+
+.faq-content {
+    display: none;
+    padding: 20px 15px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    font-family: "Lexend", sans-serif;
+}
+
+.faq-item input:checked+label+.faq-content {
+    display: block;
+}
+
+.faq-content p {
+    margin: 0;
+    font-family: "Lexend", sans-serif;
+}
+
+/* 9th  */
+
+.section-8 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 3rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    align-items: center;
+    margin: 0 auto;
+    background-image: url('assets/background.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.app-left {
+    width: 50%;
+    margin-top: 0;
+    padding-right: 1.5rem;
+    max-width: 100%;
+}
+
+.app-left h3 {
+    font-family: Lexend;
+    font-weight: 700;
+    font-size: calc(1.425rem + 2.1vw);
+    color: #212529;
+    line-height: 1.2;
+    margin-bottom: .5rem;
+    margin-top: 0;
+}
+
+.app-left p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #212529;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-family: Lexend;
+}
+
+.app-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 1.5rem;
+    cursor: pointer;
+}
+
+.app-buttons img {
+    padding: .5rem;
+    vertical-align: middle;
+    width: 200px;
+}
+
+.right {
+    width: 50%;
+    margin-top: 0;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+img {
+    max-width: 100%;
+    width: auto;
+    overflow-x: hidden;
+    vertical-align: middle;
+}
+
+/* 10th  */
+
+.section-9 {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    padding-top: 1.3rem;
+    margin: 1.5rem auto;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 0;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.footer-child {
+    flex-basis: 23%;
+    margin-left: 1rem;
+}
+
+.footer-logo img {
+    width: 83.33%;
+    vertical-align: middle;
+}
+
+.tag-line p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: bolder;
+    color: #212529;
+    font-family: Lexend;
+}
+
+.contact-info {
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.contact-info p {
+    color: #569dd0;
+    margin: auto;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: Lexend;
+}
+
+.contact-info h6 {
+    color: #212529;
+    font-size: 1rem;
+    font-family: Lexend;
+    font-weight: 500;
+    padding-top: 1rem;
+}
+
+.footer-child h3 {
+    color: #3384be;
+    font-size: calc(1.3rem + .6vw);
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    font-family: Lexend;
+}
+
+.branches {
+    margin-top: 1rem;
+}
+
+.branches p {
+    color: #212529;
+    font-size: 1rem;
+    font-family: Lexend;
+    font-weight: 400;
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+
+.careers {
+    padding-top: 1rem;
+}
+
+.working-text {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+    width: 100%;
+}
+
+.working-text p {
+    flex: 0 0 auto;
+    font-size: 1rem;
+    color: #212529;
+    font-family: Lexend;
+    font-weight: 400;
+}
+
+.subscribe {
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+.subscribe p {
+    font-size: 16px;
+    font-family: Lexend;
+    font-weight: 400;
+    color: #212529;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    padding-left: .5rem;
+}
+
+.subscribe-row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-right: 1.5rem;
+}
+
+.subscribe-row input {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: Lexend;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #569dd0;
+}
+
+.subscribe-btn {
+    padding: 10px 20px;
+    border: 2px solid #569dd0;
+    border-radius: 2px;
+    background-color: #569dd0;
+    color: #fff;
+    cursor: pointer;
+    flex: 0 0 auto;
+    width: 100%;
+    margin-top: .5rem;
+    transition-duration: .3s;
+}
+
+.subscribe-btn:hover {
+    background-color: #196cc5;
+}
+
+/* 11  */
+
+.section-10 {
+    text-align: center;
+    background-color: #b1d0e6;
+    width: 100%;
+    margin-top: 1rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.footer_copy p,
+.last-line p {
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: Lexend;
+    color: #212529;
+    line-height: 2;
+    cursor: pointer;
+}
+
+.last-line a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #212529;
+}
+
+.last-line i {
+    font-size: 1.3rem;
+}
+
+/* end  */
+
+/* reponsive start  */
+
+@media (max-width: 1440px) {
+    .section-1 .main-right {
+        height: 98%;
+    }
+
+    .section-1 .car-image img {
+        width: 56rem;
+        right: 70px;
+        bottom: -120px;
+    }
+
+    .section-1 .main-left p {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 1.6;
+        width: 36%;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 1366px) {
+    .section-1 .main-right {
+        height: 96%;
+    }
+
+    .section-1 .main-left p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        width: 34%;
+        margin-top: 10px;
+    }
+
+    .section-1 .car-image img {
+        width: 52rem;
+        right: 80px;
+        bottom: -115px;
+    }
+}
+
+@media (max-width: 1115px) {
+    .section-1 .main-left {
+        width: 100%;
+        text-align: center;
+        padding-left: 0;
+        padding-bottom: 70px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-1 .main-left h1 {
+        font-size: 60px;
+        line-height: 65px;
+        width: 85%;
+    }
+
+    .section-1 .main-left p {
+        font-size: 16px;
+        line-height: 22px;
+        width: 85%;
+        margin-left: 0;
+    }
+
+    .section-1 .main-left button {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+
+
+    .section-1 .main-right {
+        display: none;
+    }
+
+    .section-1 .car-image {
+        display: none;
+    }
+
+    .form-group {
+        flex-wrap: wrap;
+        width: 48%;
+    }
+
+    .section-3 h2 {
+        font-size: 40px;
+    }
+
+    .section-3 .Rental-container button {
+        font-size: 16px;
+    }
+
+    .section-3 .Rental-container .car-images img {
+        width: 400px;
+    }
+
+    .section-3 .Rental-container .car-details div p {
+        font-size: 14px;
+    }
+
+    .section-4 h3 {
+        font-size: 40px;
+    }
+
+}
+
+@media (max-width: 1040px) {
+
+    .section-1 {
+        height: 620px;
+    }
+
+    .section-1 .main-left h1 {
+        font-size: 55px;
+        line-height: 60px;
+        width: 80%;
+    }
+
+    .section-1 .main-left p {
+        width: 95%;
+        margin-top: 20px;
+    }
+
+    .section-2 .form-group {
+        width: 48%;
+    }
+
+    .section-3 h2 {
+        font-size: 35px;
+    }
+
+    .section-3 .Rental-container {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .section-3 .Rental-container .car-list {
+        width: 100%;
+    }
+
+    .section-3 .Rental-container .car-images img {
+        width: 500px;
+    }
+
+    .section-3 .Rental-container .car-details {
+        width: 100%;
+    }
+
+    .section-4 h3 {
+        font-size: 35px;
+    }
+
+    .section-5 {
+        align-items: center;
+        gap: 30px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .section-5 .left-col,
+    .section-5 .right-col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-5 .left-col h3 {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .section-5 .left-col h1 {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .section-5 .left-col p {
+        text-align: center;
+    }
+
+    .section-5 .right-col .feature-2-img {
+        width: 100%;
+    }
+
+    .section-6 .feedback-container {
+        gap: 50px;
+    }
+
+    .section-6 .feedback-container .testimonial {
+        width: 80%;
+    }
+
+    .section-6 .quote-icon img {
+        width: 90px;
+    }
+
+    .section-9 {
+        padding-left: 0;
+    }
+
+    .section-9 .footer-row {
+        width: 100%;
+        justify-content: unset;
+    }
+
+    .footer-child h3 {
+        font-size: 26px;
+    }
+
+    .contact-info h6 {
+        padding-top: 1.5rem;
+    }
+}
+
+@media (max-width :840px) {
+    .header .container .items {
+        display: none;
+    }
+
+    .header .container .menu-icon {
+        display: flex;
+    }
+
+    .section-6 .feedback-container {
+        width: 100%;
+        flex-direction: column;
+        gap: 30px;
+        padding: 0 15px;
+    }
+
+    .section-6 h1 {
+        font-size: 40px;
+    }
+
+    .section-6 p {
+        width: 100%;
+        line-height: 1.3;
+    }
+
+    .section-8 {
+        flex-direction: column;
+    }
+
+    .section-8 .app-left,
+    .section-8 .right {
+        width: 80%;
+        text-align: center;
+    }
+
+    .section-8 .app-left .app-buttons {
+        justify-content: center;
+        align-items: center;
+        margin-right: 0;
+    }
+
+    .section-8 {
+        background-image: url(assets/background.mobile.png);
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        padding-top: 1rem;
+    }
+
+    .section-8 .right img {
+        height: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-1 .main-left h1 {
+        font-size: 45px;
+        width: 90%;
+    }
+
+    .section-2 .form-group {
+        width: 100%;
+    }
+
+    .section-3 .Rental-container .car-images img {
+        width: 450px;
+    }
+
+    .section-4 .feature-container {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+    }
+
+    .section-4 .cards .feature {
+        width: 100%;
+    }
+
+    .section-5 .left-col,
+    .section-5 .right-col {
+        width: 100%;
+    }
+
+    .section-5 .left-col h3 {
+        font-size: 22px;
+    }
+
+    .section-5 .left-col h1 {
+        width: 95%;
+        font-size: 30px;
+        line-height: 45px;
+    }
+
+    .section-5 .left-col p {
+        width: 95%;
+    }
+
+    .section-6 {
+        padding-bottom: 1.5rem;
+    }
+
+    .section-6 .feedback-container .testimonial {
+        width: 90%;
+    }
+
+    .section-6 .row-text p {
+        width: 90%;
+    }
+
+    .section-6 .client-box {
+        padding: 0;
+    }
+
+    .footer-row {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-logo img {
+        width: 40%;
+    }
+
+    .footer-row .footer-child {
+        text-align: center;
+    }
+
+    .text-start {
+        width: 50%;
+        text-align: left;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .text-end {
+        width: 50%;
+        text-align: right;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .section-9 .footer-child .working-text {
+        margin-bottom: 1rem;
+    }
+
+    .working-text p {
+        padding-bottom: 5px;
+    }
+
+    .section-10 {
+        padding: 1rem 0;
+    }
+}
+
+@media (max-width: 430px) {
+    button:hover {
+        background-color: #569dd0 !important;
+    }
+
+    button:active {
+        background-color: #2b8eac !important;
+    }
+
+    .section-1 .main-left h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .section-2 {
+        justify-content: center;
+        margin: 10px auto;
+        margin-top: 8vh;
+        padding: 1.5rem;
+    }
+
+    .booking-row h2 {
+        font-size: 30px;
+    }
+
+    .form-group {
+        width: 100%;
+    }
+
+    .form-group button {
+        margin-top: 0;
+    }
+
+    .section-3 {
+        padding: 10px;
+    }
+
+    .vehical-models {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .vehical-models h2 {
+        font-size: 30px;
+    }
+
+    .Rental-container {
+        padding: 0;
+    }
+
+    .car-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .car-list button {
+        width: calc(100% - 20px);
+        margin: 5px 20px;
+    }
+
+    .car-images {
+        width: 100%;
+        height: 200px;
+        margin: 30px 0;
+    }
+
+    .car-images img {
+        width: 100%;
+    }
+
+    .car-details {
+        padding: 0 10px;
+        gap: 0px;
+    }
+
+    .price-day h1 {
+        font-size: 26px;
+    }
+
+    .details-row {
+        flex-wrap: wrap;
+    }
+
+    .text-start {
+        width: 50%;
+        text-align: left;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .text-end {
+        width: 50%;
+        text-align: right;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .reserve-btn {
+        padding: 0 10px;
+    }
+
+    #reserve-button {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .banner-text h2 {
+        width: 85%;
+        font-size: 40px;
+    }
+
+    .banner-text p {
+        width: 85%;
+        font-size: 17px;
+    }
+
+    .section-4 .feature {
+        padding: 5px 20px;
+    }
+
+    .section-5 .right-col .feature-2 {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .section-5 .right-col .feature-2-img {
+        width: 35%;
+    }
+
+    .section-6 .feedback-container .quote-icon img {
+        width: 90px;
+    }
+
+    .section-8 .app-left {
+        width: 100%;
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .section-8 .app-left h3 {
+        font-size: 35px;
+    }
+
+    .section-8 .app-left .app-buttons img {
+        width: 150px;
+    }
+
+    .section-8 .right {
+        width: 100%;
+    }
+
+    .section-8 .right img {
+        width: auto;
+        margin-top: 30px;
+    }
+
+    .section-9 {
+        padding-top: 0;
+    }
+
+    .footer-logo img {
+        width: 60%;
+    }
+
+    .section-9 .footer-row {
+        margin-left: 0;
+    }
+
+    .section-10 {
+        padding: .5rem;
+    }
+
+    .section-10 .footer_copy p,
+    .section-10 .last-line p {
+        font-size: 14px;
+    }
+
+    .last-line i {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .section-1 {
+        height: max-content;
+    }
+
+    .section-2 {
+        height: max-content;
+    }
+
+    .section-3 {
+        height: max-content;
+    }
+
+    .section-4 {
+        height: max-content;
+    }
+
+    .section-5 {
+        height: max-content;
+    }
+
+    .section-6 {
+        height: max-content;
+    }
+
+    .section-7 {
+        height: max-content;
+    }
+
+    .section-8 {
+        height: max-content;
+    }
+
+    .section-9 {
+        height: max-content;
+    }
+
+    .section-10 {
+        height: max-content;
+    }
+
+}
+
+/* responsive end  */

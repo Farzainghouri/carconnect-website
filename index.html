@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Car Connekt">
+    <title>Car Connekt | Lets Ride</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+
+</head>
+
+<body>
+    <div id="root">
+
+        <div class="header">
+            <div class="container">
+
+                <img loading="lazy" src="assets/Logo.png" alt="logo">
+
+                <div class="items">
+                    <a href='/'>Home</a>
+                    <a href='./about.html'>About</a>
+                    <a href='./vechile-models.html'>Vehicle Models</a>
+                    <a href='./testimonials.html'>Testimonials</a>
+                    <a href='./contact.html'>Contact</a>
+                    <button type="button">Log In</button>
+                </div>
+
+                <div class="menu-icon" onclick="toggle()">
+                    <img loading="lazy"
+                        src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2833, 37, 41, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"
+                        alt="menu">
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-box">
+            <button type="button">Log In</button>
+            <a href='/'>Home</a>
+            <a href='./about.html'>About</a>
+            <a href='./vechile-models.html'>Vechile Models</a>
+            <a href='./testimonials.html'>Testimonials</a>
+            <a href='./contact.html'>Contact</a>
+        </div>
+
+
+        <div class="section-1">
+            <div class="car-image">
+                <img loading="lazy" src="assets/cover.png" alt="CarCover">
+            </div>
+
+            <div class="main-left">
+                <h1>Experience the ride of
+                    your dreams with
+                    <span>no additional fees.</span>
+                </h1>
+
+                <p>
+                    Car Connekt is a premium car rental service currently operating out of 26 Cities across North
+                    America.
+                </p>
+                <p>
+                    Join thousands of Canadians experiencing our unbeatable prices, unlimited kilometers, flexible
+                    pick-up
+                    options, and more.
+                </p>
+                <a href="#book-ride">
+                    <button type="button">Book Your Ride Today</button>
+                </a>
+            </div>
+
+            <div class="main-right">
+                <p><i class="fa-solid fa-building"></i> 26 locations</p>
+                <p><i class="fa-solid fa-key"></i> 300+ rentals</p>
+                <p><i class="fa-solid fa-car"></i> Unlimited distance</p>
+            </div>
+
+        </div>
+
+        <div class="section-2" id="book-ride">
+            <div class="booking-row">
+                <h2>Plan your trip:</h2>
+            </div>
+
+            <div class="form-group">
+                <label for="car"><i class="fa-solid fa-car"></i> Select Your Car</label>
+                <select id="car">
+                    <option value="Tesla Model 3">Tesla Model 3</option>
+                    <option value="Honda Accord">Honda Accord</option>
+                    <option value="Jeep Wagoneer">Jeep Wrangler</option>
+                    <option value="Ford F-350">Ford F-350</option>
+                    <option value="Mini Cooper S">Mini Cooper S</option>
+                    <option value="Nissan Sentra">Nissan Sentra</option>
+                    <option value="Volkswagen Golf Mk8">Volkswagen Golf Mk8</option>
+                    <option value="Audi E-Tron">Audi E-Tron</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="pickup"><i class="fa-solid fa-location-pin"></i> Pick-Up Location</label>
+                <select id="pickup">
+                    <option value="Toronto">Toronto</option>
+                    <option value="Bramptom">Bramptom</option>
+                    <option value="Thunder Bay">Thunder Bay</option>
+                    <option value="Calgary">Calgary</option>
+                    <option value="Victoria">Victoria</option>
+                    <option value="Ottawa">Ottawa</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="dropoff"><i class="fa-solid fa-location-pin"></i> Drop-Off Location</label>
+                <select id="dropoff">
+                    <option value="Toronto">Toronto</option>
+                    <option value="Bramptom">Bramptom</option>
+                    <option value="Thunder Bay">Thunder Bay</option>
+                    <option value="Calgary">Calgary</option>
+                    <option value="Victoria">Victoria</option>
+                    <option value="Ottawa">Ottawa</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="departure"><i class="fa-solid fa-calendar"></i> Departure Date</label>
+                <input type="date" id="departure" placeholder="mm/dd/yyyy">
+            </div>
+
+            <div class="form-group">
+                <label for="arrival"><i class="fa-solid fa-calendar"></i> Arrival Date</label>
+                <input type="date" id="arrival" placeholder="mm/dd/yyyy">
+            </div>
+
+            <div class="form-group">
+                <button class="booking-btn" type="submit">Book Now</button>
+            </div>
+        </div>
+
+        <div class="section-3">
+            <div class="vehical-models">
+                <h2>Our Top Rentals</h2>
+                <p>Choose from a variety of our amazing vehicles to rent for your next business trip or adventure</p>
+            </div>
+
+            <div class="Rental-container">
+
+                <div class="car-list">
+                    <button type="button"
+                        onclick="carDetails('./assets/tesla.png', '$52/day', 'Tesla', 'Model 3', '2022', 'Automatic', '4')"
+                        data-car="tesla">Tesla Model 3</button>
+                    <button type="button"
+                        onclick="carDetails('./assets/honda.png', '$38/day', 'Honda', 'Accord', '2022', 'Automatic', '4')"
+                        data-car="honda">Honda Accord</button>
+                    <button type="button"
+                        onclick="carDetails('./assets/jeep.png', '$45/day', 'Jeep', 'Wrangler', '2021', 'Automatic','2')"
+                        data-car="jeep">Jeep Wrangler</button>
+                    <button type="button"
+                        onclick="carDetails('./assets/ford.png', '$48/day', 'Ford', 'F-350', '2021', 'Automatic', '2')"
+                        data-car="ford">Ford F-350</button>
+                    <button type="button"
+                        onclick="carDetails('./assets/mini.png', '$42/day', 'Mini', 'Cooper S', '2022', 'Manual', '2')"
+                        data-car="mini">Mini Cooper S</button>
+                    <button type="button"
+                        onclick="carDetails('./assets/nissan.png', '$40/day', 'Nissan', 'Sentra', '2020', 'Automatic', '4')"
+                        data-car="nissan">Nissan Sentra</button>
+                    <button type="button"
+                        onclick="carDetails('./assets/volkswagon.png', '$49/day', 'Volkswagen', 'Golf MK8', '2022', 'Automatic', '4')"
+                        data-car="volkswagen">Volkswagen Golf MK8</button>
+                    <button type="button"
+                        onclick="carDetails('./assets/audi.png', '$50/day', 'Audi', 'E-Tron', '2023', 'Automatic', '4')"
+                        data-car="audi">Audi E-Tron</button>
+                </div>
+
+                <div class="car-images" id="cars-img">
+                    <img loading="lazy" src="./assets/tesla.png" alt="Cars">
+                </div>
+
+                <div class="car-details">
+                    <div class="price-day">
+                        <h1 id="car-rent">$52/day</h1>
+                    </div>
+
+                    <div class="details-row">
+                        <p class="text-start">Make</p>
+                        <p class="text-end" id="car-make">Tesla</p>
+
+                        <p class="text-start">Model</p>
+                        <p class="text-end" id="car-model">Model 3</p>
+
+                        <p class="text-start">Year</p>
+                        <p class="text-end" id="car-year">2022</p>
+
+                        <p class="text-start">Transmission</p>
+                        <p class="text-end" id="car-transmission">Automatic</p>
+
+                        <p class="text-start">Doors</p>
+                        <p class="text-end" id="car-doors">4</p>
+                    </div>
+
+                    <div class="reserve-btn">
+                        <a href="#book-ride">
+                            <button id="reserve-button" type="button">Reserve Now</button>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="banner-text">
+            <h2>Save big with Car Connect</h2>
+            <p>Cheapest rates. Local Suppliers. <span>24/7</span> support.</p>
+        </div>
+
+        <div class="section-4">
+            <h5>Plan your trip today</h5>
+            <h3>Fast and Effortless Rentals</h3>
+
+            <div class="feature-container">
+                <div class="feature">
+                    <img loading="lazy" src="assets/png1.png" alt="icons">
+                    <h4>Select your Car</h4>
+                    <p>We offers a big range of vehicles for all your driving needs. We have the perfect car to meet
+                        your needs</p>
+                </div>
+                <div class="feature">
+                    <img loading="lazy" src="assets/png2.png" alt="icons">
+                    <h4>24/7 Operators</h4>
+                    <p>Our knowledgeable and friendly operators are always ready to help with any questions or concerns
+                    </p>
+                </div>
+                <div class="feature">
+                    <img loading="lazy" src="assets/png3.png" alt="icons">
+                    <h4>Unlimited Distance</h4>
+                    <p>Whether you're hitting the open road, we've got you covered with our wide range of cars</p>
+                </div>
+            </div>
+
+            <div class="banner-img">
+                <img loading="lazy" src="assets/main.png" alt="banner">
+            </div>
+
+        </div>
+
+        <div class="section-5">
+
+            <div class="left-col">
+                <h3>Why Choose Car Connekt?</h3>
+                <h1>The <span>best</span> deals you will ever find.</h1>
+                <p>Discover the best deals you'll ever find with our unbeatable offers. We're dedicated to providing you
+                    with the best value for your money, so you can enjoy top-quality services and products without
+                    breaking the bank. Our deals are designed to give you the ultimate renting experience, so don't miss
+                    out on your chance to save big.
+                </p>
+
+                <a rel="noopener" href="#more-info">
+                    <button type="button" class="Find-btn">Find out more ></button>
+                </a>
+            </div>
+
+            <div class="right-col">
+                <div class="feature-2">
+                    <div class="feature-2-img">
+                        <img loading="lazy" src="assets/png4.png" alt="Car Icon">
+                    </div>
+                    <div class="feature-2-text">
+                        <h5>Cross Country Drive</h5>
+                        <p>Take your driving experience to the next level with our top-notch vehicles for your
+                            cross-country adventures.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="feature-2">
+                    <div class="feature-2-img">
+                        <img loading="lazy" src="assets/png5.png" alt="Money Icon">
+                    </div>
+                    <div class="feature-2-text">
+                        <h5>All Inclusive Pricing</h5>
+                        <p>Get everything you need in one convenient, transparent price with our all-inclusive pricing
+                            policy.</p>
+                    </div>
+                </div>
+
+                <div class="feature-2">
+                    <div class="feature-2-img">
+                        <img loading="lazy" src="assets/png6.png" alt="Fees Icon">
+                    </div>
+                    <div class="feature-2-text">
+                        <h5>No Hidden Fees</h5>
+                        <p>Enjoy peace of mind with our no hidden charges policy. We believe in transparent and honest
+                            pricing.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="section-6">
+
+            <div class="row-text">
+                <h1>Client Testimonials</h1>
+                <h6>See what our clients are saying about us!</h6>
+                <p>Discover the positive impact we've made on the our clients by reading through their testimonials. Our
+                    clients have experienced our service and results, and they're eager to share their positive
+                    experiences
+                    with you.
+                </p>
+            </div>
+
+            <div class="feedback-container">
+                <div class="testimonial">
+                    <p class="quote">
+                        Car Connekt is my go-to when looking for a rental. Their prices are unbeatable, I don't
+                        think I'd ever go back to the others. With a large selection of inventory, there's so many
+                        wonderful vehicles to choose from. Thank you Car Connekt!
+                    </p>
+
+                    <div class="client-box">
+                        <div class="client-box-text">
+                            <p class="author">Janice P.</p>
+                            <p class="location">Toronto, ON</p>
+                        </div>
+                        <div class="quote-icon">
+                            <img loading="lazy" src="assets/feedback.png" alt="Quote Icon">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial">
+                    <p class="quote">I'm impressed with how easy Car Connekt is to use. The user interface is intuitive
+                        and user-friendly, making it a breeze to navigate. I highly recommend the Car
+                        Connekt app to anyone looking for a quick, clean and cheap rental!
+                    </p>
+                    <div class="client-box">
+                        <div class="client-box-text">
+                            <p class="author">Jonatan L.</p>
+                            <p class="location">Ottawa, ON</p>
+                        </div>
+                        <div class="quote-icon">
+                            <img loading="lazy" src="assets/feedback.png" alt="Quote Icon">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="section-7">
+            <h4>FAQ</h4>
+            <h3>Frequently Asked Questions</h3>
+
+            <div class="faq-container">
+
+                <div class="faq-item">
+                    <input type="checkbox" id="faq1">
+                    <label for="faq1">Can I rent a car without a credit card on file with Car Connekt?</label>
+                    <div class="faq-content">
+                        <p>Car Connekt requires a valid credit card on file in order to rent a car. This is to ensure
+                            that
+                            any
+                            damages or fines incurred during the rental period can be charged to the renter.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <input type="checkbox" id="faq2">
+                    <label for="faq2">How do I rent a car from Car Connekt?</label>
+                    <div class="faq-content">
+                        <p>Renting a car from Car Connekt is easy! simply fill out or web form for an email portal, or
+                            download our app, upload
+                            your documents to get approved!</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <input type="checkbox" id="faq3">
+                    <label for="faq3">What documents do I need to provide to rent a car from Car Connekt?</label>
+                    <div class="faq-content">
+                        <p>Please bring two valid pieces of identification, preferably a passport along with a licence.
+                            You will be requested to provide proof of insurance for the passed two years.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <input type="checkbox" id="faq4">
+                    <label for="faq4">Is there an age limit for renting a car from Car Connekt?</label>
+                    <div class="faq-content">
+                        <p>Yes, the minimum age requirement for renting a car from Car Connekt is 21 years old. Drivers
+                            under the age of 25 may be subject to a young driver surcharge, depending on the renter's
+                            driving abstract.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="section-8">
+
+            <div class="app-left">
+                <h3>Get the <span>most</span> out of Car Connekt</h3>
+                <p>The Car Connekt app offers an unparalleled driving experience. Our innovative
+                    features allow you to
+                    stay connected while on the go, keeping you safe and informed. Download the app
+                    today and get the
+                    most out of your driving experience.
+                </p>
+
+                <div class="app-buttons">
+                    <img loading="lazy" src="assets/AppStore.png" alt="App Store Button">
+                    <img loading="lazy" src="assets/GooglePlay.png" alt="Google Play Button">
+                </div>
+            </div>
+
+            <div class="right">
+                <img loading="lazy" src="assets/appimg.png" alt="Mobile Image">
+            </div>
+
+        </div>
+
+        <footer id="more-info">
+            <div class="section-9">
+                <div class="footer-row">
+
+                    <div class="footer-child">
+                        <div class="footer-logo">
+                            <img loading="lazy" src="assets/logo.png" alt="Car Connekt Logo">
+                        </div>
+                        <div class="tag-line">
+                            <p>The cheapest, easiest car rental service</p>
+                        </div>
+
+                        <div class="contact-info">
+                            <a rel="noopener" href="https://wa.me/+14167780018" target="_blank">
+                                <p><i class="special-text fa-solid fa-phone"></i>
+                                    +1 (416) 778-0018
+                                </p>
+                            </a>
+                            <a rel="noopener" href="mailto:info@carconnekt.ca" target="_blank">
+                                <p><i class="special-text fa-solid fa-envelope"></i>
+                                    info@carconnekt.ca
+                                </p>
+                            </a>
+                            <h6>designed by FARZAIN GHOURI</h6>
+                        </div>
+                    </div>
+
+                    <div class="footer-child">
+                        <h3><i class="fa-solid fa-building"></i>
+                            Branches
+                        </h3>
+
+                        <div class="branches">
+                            <p>Toronto</p>
+                            <p>Thunder Bay</p>
+                            <p>Calgary</p>
+                            <p>Victoria</p>
+                        </div>
+
+                        <div class="careers">
+                            <h3><i class="fa-solid fa-suitcase"></i>
+                                Careers
+                            </h3>
+                        </div>
+                    </div>
+
+                    <div class="footer-child">
+                        <h3><i class="fa-solid fa-clock"></i>
+                            Working Hours
+                        </h3>
+                        <div class="working-text">
+                            <p class="text-start">Mon - Fri:</p>
+                            <p class="text-end">8am - 8pm</p>
+                            <p class="text-start">Sat:</p>
+                            <p class="text-end">9am - 5pm</p>
+                            <p class="text-start">Sun:</p>
+                            <p class="text-end">Closed</p>
+                        </div>
+                    </div>
+
+                    <div class="footer-child">
+                        <div class="subscribe">
+                            <h3><i class="fa-solid fa-envelope"></i>
+                                subscribe
+                            </h3>
+                            <p>weekly newsletter with promotions. opt out at any time.</p>
+
+                            <div class="subscribe-row">
+                                <input type="email" placeholder="Enter your email">
+                                <button type="submit" class="subscribe-btn">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="section-10">
+                <div class="footer_copy">
+                    <p>Copyright&#169; Car Connekt 2024. All right reserved</p>
+                </div>
+
+                <div class="last-line">
+                    <p>
+                        <a href="https://github.com/Farzainghouri" target="_blank" rel="noopener">
+                            <i class="fa-brands fa-github"></i> Designed & Developed By FARZAIN GHOURI
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/a7a0423dc4.js" crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+
+</body>
+
+</html>
+
+<!-- end  -->
